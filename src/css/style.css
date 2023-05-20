@@ -1,0 +1,105 @@
+.app {
+  border-radius: var(--global-radius);
+  overflow: hidden;
+  width: 100%;
+}
+
+.bg--main-img {
+  background-image: url(https://hinhnen4k.com/wp-content/uploads/2023/02/anh-gai-xinh-2k4-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.avt {
+  width: 60%;
+  min-height: 40rem;
+}
+
+.avt--frame {
+  border: 1px solid var(--foreground-color);
+  border-radius: var(--global-radius);
+}
+
+.content {
+  background-color: var(--background-color);
+  min-height: 600px;
+  position: relative;
+}
+.content--main {
+  position: absolute;
+  left: -100%;
+}
+.content--main.active {
+  z-index: 1000;
+  left: 0;
+}
+
+.home__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.home__header p {
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+}
+.about__social > * {
+  margin: 0 0.5rem;
+}
+.about__button {
+  border: 1px solid var(--foreground-color);
+  border-radius: var(--global-radius);
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+  width: 15rem;
+  min-height: 5rem;
+}
+.about__button:hover {
+  background-color: var(--background-color);
+}
+
+.social__button {
+  background-color: var(--foreground-color);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.social__button a {
+  color: var(--background-color);
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  display: block;
+}
+.social__button a i {
+  font-size: 2rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.social__button:hover {
+  background-color: var(--background-color);
+}
+.social__button:hover a {
+  color: var(--foreground-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .app {
+    height: 100%;
+    border-radius: 0;
+  }
+  .h-sm-full {
+    height: 100%;
+  }
+  .hanging {
+    width: 4.5rem;
+  }
+  .inner--width {
+    width: calc(100% - 4.5rem);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
